@@ -1,0 +1,48 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'C:/Users/Viigg/IdeaProjects/bajsshit - kopia/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Viigg/IdeaProjects/bajsshit - kopia/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'library 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'library 1.0-SNAPSHOT API'
+se.yrgo.models
+se.yrgo.models.ui
+se.yrgo.models.utilities
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\src\main\java = 1732883006092
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\allclasses-index.html = 1732884649898
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\allpackages-index.html = 1732884649905
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\element-list = 1732884649756
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\help-doc.html = 1732884649933
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\index-all.html = 1732884649925
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\index.html = 1732884649881
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\jquery-ui.overrides.css = 1732884649964
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\member-search-index.js = 1732884649911
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\module-search-index.js = 1732884649906
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\overview-summary.html = 1732884649928
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\overview-tree.html = 1732884649877
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\package-search-index.js = 1732884649908
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\script.js = 1732884649937
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\search.js = 1732884649946
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\serialized-form.html = 1732884649804
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\stylesheet.css = 1732884649936
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\tag-search-index.js = 1732884649912
+C:\Users\Viigg\IdeaProjects\bajsshit - kopia\target\reports\apidocs\type-search-index.js = 1732884649910
