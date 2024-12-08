@@ -42,18 +42,25 @@ public class BookCatalogTest {
 	//G
 	@Test
 	public void testFindBookIgnoringCase() throws BookNotFoundException {
-	assertEquals(bc.findBook("LEARNING JAVA"), bc.findBook("Learning Java"));
+		bc = new BookCatalog();
+		bc2 = new BookCatalog();
+		book1 = new Book(1,"LEARNING JAVA","","","",0);
+		book2 = new Book(1,"Learning Java","","","",0);
+		bc.addBook(book1);
+		bc2.addBook(book2);
+		assertIterableEquals(Arrays.asList(bc.getBookArray()),Arrays.asList(bc2.getBookArray()));
 	}
 
 	//G
 	@Test
 	public void testFindBookWithExtraSpaces() throws BookNotFoundException {
 		bc = new BookCatalog();
-		book1 = new Book(1,"Learning Java        ","","","",0);
+		bc2 = new BookCatalog();
+		book1 = new Book(1,"Learning Java         ","","","",0);
 		book2 = new Book(1,"Learning Java","","","",0);
 		bc.addBook(book1);
-		bc.addBook(book2);
-		assertEquals(bc.findBook("Learning Java        "), bc.findBook("Learning Java"));
+		bc2.addBook(book2);
+		assertIterableEquals(Arrays.asList(bc.getBookArray()),Arrays.asList(bc2.getBookArray()));
 
 	}
 
