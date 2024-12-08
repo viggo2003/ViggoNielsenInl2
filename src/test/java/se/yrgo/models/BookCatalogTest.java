@@ -2,13 +2,16 @@ package se.yrgo.models;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.Arrays;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class BookCatalogTest {
-
+	private BookCatalog bc2;
 	private BookCatalog bc;
 	private Book book1;
+	private Book book2;
 
 	public BookCatalogTest() throws BookNotFoundException {
 		bc = new BookCatalog();
@@ -21,9 +24,12 @@ public class BookCatalogTest {
 	@Test
 	public void testAddABook() throws BookNotFoundException {
 	bc = new BookCatalog();
+	bc2 = new BookCatalog();
 	book1 = new Book(1,"Learning Java","","","",0);
+	book2 = new Book(1,"Learning Java","","","",0);
 	bc.addBook(book1);
-	assertEquals(bc.findBook("Learning Java"), bc.findBook("Learning Java"));
+	bc2.addBook(book2);
+	assertIterableEquals(Arrays.asList(bc.getBookArray()),Arrays.asList(bc2.getBookArray()));
 	}
 
 	//G
@@ -36,13 +42,13 @@ public class BookCatalogTest {
 	//G
 	@Test
 	public void testFindBookIgnoringCase() throws BookNotFoundException {
-	assertEquals(bc.findBook("LEARNING JAVA"), bc.findBook("learning java"));
+	assertEquals(bc.findBook("LEARNING JAVA"), bc.findBook("Learning Java"));
 	}
 
 	//G
 	@Test
 	public void testFindBookWithExtraSpaces() throws BookNotFoundException {
-		assertEquals(bc.findBook("Learning Java        "), bc.findBook("Learning java"));
+		assertEquals(bc.findBook("Learning Java        "), bc.findBook("Learning Java"));
 
 	}
 

@@ -1,0 +1,4 @@
+I denna inlämningsuppgiften har jag använt 3 olika maven funktioner. Dessa tre är:
+1. mvn clean - tar bort target katalogen och städar upp jobbytan
+2. mvn compile - kompilerar alla java filer.
+3. mvn package - packeterar hela programet. Detta innebär att den kompilerar, kör tester och skapar en target katalog där jar filen ligger vilket används för att köra programmet.

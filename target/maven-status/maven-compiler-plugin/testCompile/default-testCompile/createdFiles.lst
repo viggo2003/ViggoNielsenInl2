@@ -1,3 +1,6 @@
 se\yrgo\models\BookTest.class
 se\yrgo\models\LoanTest.class
+se\yrgo\models\utilities\GenderType.class
+se\yrgo\models\ui\Main.class
+se\yrgo\models\utilities\LoanStatus.class
 se\yrgo\models\BookCatalogTest.class
