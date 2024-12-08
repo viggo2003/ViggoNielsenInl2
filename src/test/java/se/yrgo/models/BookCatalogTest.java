@@ -48,6 +48,11 @@ public class BookCatalogTest {
 	//G
 	@Test
 	public void testFindBookWithExtraSpaces() throws BookNotFoundException {
+		bc = new BookCatalog();
+		book1 = new Book(1,"Learning Java        ","","","",0);
+		book2 = new Book(1,"Learning Java","","","",0);
+		bc.addBook(book1);
+		bc.addBook(book2);
 		assertEquals(bc.findBook("Learning Java        "), bc.findBook("Learning Java"));
 
 	}
