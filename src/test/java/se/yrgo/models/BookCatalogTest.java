@@ -35,8 +35,10 @@ public class BookCatalogTest {
 	//G
 	@Test
 	public void testFindBook() throws BookNotFoundException {
+		bc = new BookCatalog();
+		book1 = new Book(1,"Learning Java","","","",0);
+		bc.addBook(book1);
 		assertEquals(bc.findBook("Learning Java"), bc.findBook("Learning Java"));
-
 	}
 
 	//G
