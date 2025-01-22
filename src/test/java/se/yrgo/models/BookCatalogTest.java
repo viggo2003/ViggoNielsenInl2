@@ -38,7 +38,9 @@ public class BookCatalogTest {
 		bc = new BookCatalog();
 		book1 = new Book(1,"Learning Java","","","",0);
 		bc.addBook(book1);
-		assertEquals(bc.findBook("Learning Java"), bc.findBook("Learning Java"));
+		Book foundBook = bc.findBook("Learning Java");
+		assertNotNull(foundBook);
+		assertEquals(book1, foundBook);
 	}
 
 	//G
